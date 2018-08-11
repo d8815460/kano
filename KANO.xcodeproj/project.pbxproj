@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		470F6367211EB1FA00E6AEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F6366211EB1FA00E6AEDF /* AppDelegate.swift */; };
+		470F6369211EB1FA00E6AEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F6368211EB1FA00E6AEDF /* ViewController.swift */; };
+		470F636C211EB1FA00E6AEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470F636A211EB1FA00E6AEDF /* Main.storyboard */; };
+		470F636E211EB1FC00E6AEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470F636D211EB1FC00E6AEDF /* Assets.xcassets */; };
+		470F6371211EB1FC00E6AEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470F636F211EB1FC00E6AEDF /* LaunchScreen.storyboard */; };
+		470F637C211EB1FC00E6AEDF /* KANOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F637B211EB1FC00E6AEDF /* KANOTests.swift */; };
+		470F6387211EB1FC00E6AEDF /* KANOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F6386211EB1FC00E6AEDF /* KANOUITests.swift */; };
+		B9BB55C3E6754E0829802513 /* Pods_KANO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EE530CA2B8817ED142C426 /* Pods_KANO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		470F6378211EB1FC00E6AEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 470F635B211EB1FA00E6AEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470F6362211EB1FA00E6AEDF;
+			remoteInfo = KANO;
+		};
+		470F6383211EB1FC00E6AEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 470F635B211EB1FA00E6AEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470F6362211EB1FA00E6AEDF;
+			remoteInfo = KANO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04CDE6FB394F8AD2307F6160 /* Pods-KANO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KANO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KANO/Pods-KANO.debug.xcconfig"; sourceTree = "<group>"; };
+		470F6363211EB1FA00E6AEDF /* KANO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KANO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		470F6366211EB1FA00E6AEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		470F6368211EB1FA00E6AEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		470F636B211EB1FA00E6AEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		470F636D211EB1FC00E6AEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		470F6370211EB1FC00E6AEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		470F6372211EB1FC00E6AEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		470F6377211EB1FC00E6AEDF /* KANOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KANOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		470F637B211EB1FC00E6AEDF /* KANOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KANOTests.swift; sourceTree = "<group>"; };
+		470F637D211EB1FC00E6AEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		470F6382211EB1FC00E6AEDF /* KANOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KANOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		470F6386211EB1FC00E6AEDF /* KANOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KANOUITests.swift; sourceTree = "<group>"; };
+		470F6388211EB1FC00E6AEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		603E73A5256930A52EE07292 /* Pods-KANO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KANO.release.xcconfig"; path = "Pods/Target Support Files/Pods-KANO/Pods-KANO.release.xcconfig"; sourceTree = "<group>"; };
+		C4EE530CA2B8817ED142C426 /* Pods_KANO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KANO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		470F6360211EB1FA00E6AEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BB55C3E6754E0829802513 /* Pods_KANO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F6374211EB1FC00E6AEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F637F211EB1FC00E6AEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470F635A211EB1FA00E6AEDF = {
+			isa = PBXGroup;
+			children = (
+				470F6365211EB1FA00E6AEDF /* KANO */,
+				470F637A211EB1FC00E6AEDF /* KANOTests */,
+				470F6385211EB1FC00E6AEDF /* KANOUITests */,
+				470F6364211EB1FA00E6AEDF /* Products */,
+				8AB40A4060BF581C8DCAED4C /* Pods */,
+				9CA3E69E32D6D1234D2A948A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		470F6364211EB1FA00E6AEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				470F6363211EB1FA00E6AEDF /* KANO.app */,
+				470F6377211EB1FC00E6AEDF /* KANOTests.xctest */,
+				470F6382211EB1FC00E6AEDF /* KANOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		470F6365211EB1FA00E6AEDF /* KANO */ = {
+			isa = PBXGroup;
+			children = (
+				470F6366211EB1FA00E6AEDF /* AppDelegate.swift */,
+				470F6368211EB1FA00E6AEDF /* ViewController.swift */,
+				470F636A211EB1FA00E6AEDF /* Main.storyboard */,
+				470F636D211EB1FC00E6AEDF /* Assets.xcassets */,
+				470F636F211EB1FC00E6AEDF /* LaunchScreen.storyboard */,
+				470F6372211EB1FC00E6AEDF /* Info.plist */,
+			);
+			path = KANO;
+			sourceTree = "<group>";
+		};
+		470F637A211EB1FC00E6AEDF /* KANOTests */ = {
+			isa = PBXGroup;
+			children = (
+				470F637B211EB1FC00E6AEDF /* KANOTests.swift */,
+				470F637D211EB1FC00E6AEDF /* Info.plist */,
+			);
+			path = KANOTests;
+			sourceTree = "<group>";
+		};
+		470F6385211EB1FC00E6AEDF /* KANOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				470F6386211EB1FC00E6AEDF /* KANOUITests.swift */,
+				470F6388211EB1FC00E6AEDF /* Info.plist */,
+			);
+			path = KANOUITests;
+			sourceTree = "<group>";
+		};
+		8AB40A4060BF581C8DCAED4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04CDE6FB394F8AD2307F6160 /* Pods-KANO.debug.xcconfig */,
+				603E73A5256930A52EE07292 /* Pods-KANO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CA3E69E32D6D1234D2A948A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE530CA2B8817ED142C426 /* Pods_KANO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		470F6362211EB1FA00E6AEDF /* KANO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470F638B211EB1FC00E6AEDF /* Build configuration list for PBXNativeTarget "KANO" */;
+			buildPhases = (
+				1700350982D4ADCA94321590 /* [CP] Check Pods Manifest.lock */,
+				470F635F211EB1FA00E6AEDF /* Sources */,
+				470F6360211EB1FA00E6AEDF /* Frameworks */,
+				470F6361211EB1FA00E6AEDF /* Resources */,
+				690E68B2EBB45038F03BB824 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KANO;
+			productName = KANO;
+			productReference = 470F6363211EB1FA00E6AEDF /* KANO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		470F6376211EB1FC00E6AEDF /* KANOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470F638E211EB1FC00E6AEDF /* Build configuration list for PBXNativeTarget "KANOTests" */;
+			buildPhases = (
+				470F6373211EB1FC00E6AEDF /* Sources */,
+				470F6374211EB1FC00E6AEDF /* Frameworks */,
+				470F6375211EB1FC00E6AEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470F6379211EB1FC00E6AEDF /* PBXTargetDependency */,
+			);
+			name = KANOTests;
+			productName = KANOTests;
+			productReference = 470F6377211EB1FC00E6AEDF /* KANOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		470F6381211EB1FC00E6AEDF /* KANOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470F6391211EB1FC00E6AEDF /* Build configuration list for PBXNativeTarget "KANOUITests" */;
+			buildPhases = (
+				470F637E211EB1FC00E6AEDF /* Sources */,
+				470F637F211EB1FC00E6AEDF /* Frameworks */,
+				470F6380211EB1FC00E6AEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470F6384211EB1FC00E6AEDF /* PBXTargetDependency */,
+			);
+			name = KANOUITests;
+			productName = KANOUITests;
+			productReference = 470F6382211EB1FC00E6AEDF /* KANOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		470F635B211EB1FA00E6AEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "陳駿逸";
+				TargetAttributes = {
+					470F6362211EB1FA00E6AEDF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					470F6376211EB1FC00E6AEDF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 470F6362211EB1FA00E6AEDF;
+					};
+					470F6381211EB1FC00E6AEDF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 470F6362211EB1FA00E6AEDF;
+					};
+				};
+			};
+			buildConfigurationList = 470F635E211EB1FA00E6AEDF /* Build configuration list for PBXProject "KANO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 470F635A211EB1FA00E6AEDF;
+			productRefGroup = 470F6364211EB1FA00E6AEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				470F6362211EB1FA00E6AEDF /* KANO */,
+				470F6376211EB1FC00E6AEDF /* KANOTests */,
+				470F6381211EB1FC00E6AEDF /* KANOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		470F6361211EB1FA00E6AEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F6371211EB1FC00E6AEDF /* LaunchScreen.storyboard in Resources */,
+				470F636E211EB1FC00E6AEDF /* Assets.xcassets in Resources */,
+				470F636C211EB1FA00E6AEDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F6375211EB1FC00E6AEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F6380211EB1FC00E6AEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1700350982D4ADCA94321590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KANO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		690E68B2EBB45038F03BB824 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KANO/Pods-KANO-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FormatterKit/FormatterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseFacebookUtilsV4/ParseFacebookUtilsV4.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Synchronized/Synchronized.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FormatterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseFacebookUtilsV4.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Synchronized.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KANO/Pods-KANO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		470F635F211EB1FA00E6AEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F6369211EB1FA00E6AEDF /* ViewController.swift in Sources */,
+				470F6367211EB1FA00E6AEDF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F6373211EB1FC00E6AEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F637C211EB1FC00E6AEDF /* KANOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F637E211EB1FC00E6AEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F6387211EB1FC00E6AEDF /* KANOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		470F6379211EB1FC00E6AEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 470F6362211EB1FA00E6AEDF /* KANO */;
+			targetProxy = 470F6378211EB1FC00E6AEDF /* PBXContainerItemProxy */;
+		};
+		470F6384211EB1FC00E6AEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 470F6362211EB1FA00E6AEDF /* KANO */;
+			targetProxy = 470F6383211EB1FC00E6AEDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		470F636A211EB1FA00E6AEDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470F636B211EB1FA00E6AEDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		470F636F211EB1FC00E6AEDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470F6370211EB1FC00E6AEDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		470F6389211EB1FC00E6AEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		470F638A211EB1FC00E6AEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		470F638C211EB1FC00E6AEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CDE6FB394F8AD2307F6160 /* Pods-KANO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4K46M3X9G;
+				INFOPLIST_FILE = KANO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		470F638D211EB1FC00E6AEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603E73A5256930A52EE07292 /* Pods-KANO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4K46M3X9G;
+				INFOPLIST_FILE = KANO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		470F638F211EB1FC00E6AEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4K46M3X9G;
+				INFOPLIST_FILE = KANOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KANO.app/KANO";
+			};
+			name = Debug;
+		};
+		470F6390211EB1FC00E6AEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4K46M3X9G;
+				INFOPLIST_FILE = KANOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KANO.app/KANO";
+			};
+			name = Release;
+		};
+		470F6392211EB1FC00E6AEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4K46M3X9G;
+				INFOPLIST_FILE = KANOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KANO;
+			};
+			name = Debug;
+		};
+		470F6393211EB1FC00E6AEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4K46M3X9G;
+				INFOPLIST_FILE = KANOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KANO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		470F635E211EB1FA00E6AEDF /* Build configuration list for PBXProject "KANO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F6389211EB1FC00E6AEDF /* Debug */,
+				470F638A211EB1FC00E6AEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470F638B211EB1FC00E6AEDF /* Build configuration list for PBXNativeTarget "KANO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F638C211EB1FC00E6AEDF /* Debug */,
+				470F638D211EB1FC00E6AEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470F638E211EB1FC00E6AEDF /* Build configuration list for PBXNativeTarget "KANOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F638F211EB1FC00E6AEDF /* Debug */,
+				470F6390211EB1FC00E6AEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470F6391211EB1FC00E6AEDF /* Build configuration list for PBXNativeTarget "KANOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F6392211EB1FC00E6AEDF /* Debug */,
+				470F6393211EB1FC00E6AEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 470F635B211EB1FA00E6AEDF /* Project object */;
+}

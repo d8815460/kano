@@ -1,0 +1,111 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Canvas (0.1.2)
+  - FBSDKCoreKit (4.34.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.34.0):
+    - FBSDKCoreKit
+  - FormatterKit (1.8.2):
+    - FormatterKit/AddressFormatter (= 1.8.2)
+    - FormatterKit/ArrayFormatter (= 1.8.2)
+    - FormatterKit/ColorFormatter (= 1.8.2)
+    - FormatterKit/LocationFormatter (= 1.8.2)
+    - FormatterKit/NameFormatter (= 1.8.2)
+    - FormatterKit/OrdinalNumberFormatter (= 1.8.2)
+    - FormatterKit/Resources (= 1.8.2)
+    - FormatterKit/TimeIntervalFormatter (= 1.8.2)
+    - FormatterKit/UnitOfInformationFormatter (= 1.8.2)
+    - FormatterKit/URLRequestFormatter (= 1.8.2)
+  - FormatterKit/AddressFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/ArrayFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/ColorFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/LocationFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/NameFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/OrdinalNumberFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/Resources (1.8.2)
+  - FormatterKit/TimeIntervalFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/UnitOfInformationFormatter (1.8.2):
+    - FormatterKit/Resources
+  - FormatterKit/URLRequestFormatter (1.8.2):
+    - FormatterKit/Resources
+  - Parse (1.17.1):
+    - Parse/Core (= 1.17.1)
+  - Parse/Core (1.17.1):
+    - Bolts/Tasks (~> 1.9)
+  - ParseFacebookUtilsV4 (1.11.1):
+    - Bolts/Tasks (>= 1.6)
+    - FBSDKCoreKit (~> 4.10)
+    - FBSDKLoginKit (~> 4.10)
+    - FBSDKTVOSKit (~> 4.10)
+    - Parse (~> 1.12)
+  - ParseUI (1.2.0):
+    - Bolts/Tasks (~> 1.3)
+    - Parse (~> 1.9)
+  - Realm (3.7.5):
+    - Realm/Headers (= 3.7.5)
+  - Realm/Headers (3.7.5)
+  - RealmSwift (3.7.5):
+    - Realm (= 3.7.5)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - Synchronized (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Canvas
+  - FormatterKit (~> 1.8)
+  - Parse
+  - ParseFacebookUtilsV4
+  - ParseUI
+  - RealmSwift
+  - SDWebImage (~> 4.0)
+  - Synchronized (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Bolts
+    - Canvas
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FormatterKit
+    - Parse
+    - ParseFacebookUtilsV4
+    - ParseUI
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - Synchronized
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  FBSDKCoreKit: 0ff57f093b85c8c9d5aba697d3edf68a8960ce78
+  FBSDKLoginKit: 8c78f57a145afb756e4755e69195ebe08a42466e
+  FormatterKit: 4b8f29acc9b872d5d12a63efb560661e8f2e1b98
+  Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
+  ParseFacebookUtilsV4: bd56a321d78e0880a9594f7ca433ffb1d6ed63c3
+  ParseUI: 2b37a0bc692a3e7666cf0c37b5521dfddd74a1af
+  Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
+  RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  Synchronized: bac5463b70c2f5fde23fe4ae588739bf9be095a4
+
+PODFILE CHECKSUM: ed149f7f65f12a08a14112221075176313134c31
+
+COCOAPODS: 1.5.0
