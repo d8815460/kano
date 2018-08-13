@@ -14,6 +14,19 @@
 		470F6371211EB1FC00E6AEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470F636F211EB1FC00E6AEDF /* LaunchScreen.storyboard */; };
 		470F637C211EB1FC00E6AEDF /* KANOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F637B211EB1FC00E6AEDF /* KANOTests.swift */; };
 		470F6387211EB1FC00E6AEDF /* KANOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F6386211EB1FC00E6AEDF /* KANOUITests.swift */; };
+		473C24F9211EE7AC00DDAE25 /* AYIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C24F8211EE7AC00DDAE25 /* AYIConstants.swift */; };
+		473C24FA211EE7AC00DDAE25 /* AYIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C24F8211EE7AC00DDAE25 /* AYIConstants.swift */; };
+		473C24FB211EE7AC00DDAE25 /* AYIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C24F8211EE7AC00DDAE25 /* AYIConstants.swift */; };
+		473C24FD211EE7D100DDAE25 /* AYICache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C24FC211EE7D100DDAE25 /* AYICache.swift */; };
+		473C24FE211EE7D100DDAE25 /* AYICache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C24FC211EE7D100DDAE25 /* AYICache.swift */; };
+		473C24FF211EE7D100DDAE25 /* AYICache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C24FC211EE7D100DDAE25 /* AYICache.swift */; };
+		473C2501211EE7EF00DDAE25 /* AYIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C2500211EE7EF00DDAE25 /* AYIUtility.swift */; };
+		473C2502211EE7EF00DDAE25 /* AYIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C2500211EE7EF00DDAE25 /* AYIUtility.swift */; };
+		473C2503211EE7EF00DDAE25 /* AYIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C2500211EE7EF00DDAE25 /* AYIUtility.swift */; };
+		473C250721214C2B00DDAE25 /* MyFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C250621214C2B00DDAE25 /* MyFeedTableViewController.swift */; };
+		473C25112121998B00DDAE25 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C25102121998B00DDAE25 /* SampleCell.swift */; };
+		473C25122121998B00DDAE25 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C25102121998B00DDAE25 /* SampleCell.swift */; };
+		473C25132121998B00DDAE25 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C25102121998B00DDAE25 /* SampleCell.swift */; };
 		B9BB55C3E6754E0829802513 /* Pods_KANO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EE530CA2B8817ED142C426 /* Pods_KANO.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +62,11 @@
 		470F6382211EB1FC00E6AEDF /* KANOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KANOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		470F6386211EB1FC00E6AEDF /* KANOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KANOUITests.swift; sourceTree = "<group>"; };
 		470F6388211EB1FC00E6AEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473C24F8211EE7AC00DDAE25 /* AYIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYIConstants.swift; sourceTree = "<group>"; };
+		473C24FC211EE7D100DDAE25 /* AYICache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYICache.swift; sourceTree = "<group>"; };
+		473C2500211EE7EF00DDAE25 /* AYIUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYIUtility.swift; sourceTree = "<group>"; };
+		473C250621214C2B00DDAE25 /* MyFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedTableViewController.swift; sourceTree = "<group>"; };
+		473C25102121998B00DDAE25 /* SampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		603E73A5256930A52EE07292 /* Pods-KANO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KANO.release.xcconfig"; path = "Pods/Target Support Files/Pods-KANO/Pods-KANO.release.xcconfig"; sourceTree = "<group>"; };
 		C4EE530CA2B8817ED142C426 /* Pods_KANO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KANO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,8 +122,11 @@
 		470F6365211EB1FA00E6AEDF /* KANO */ = {
 			isa = PBXGroup;
 			children = (
+				473C24F3211EE70400DDAE25 /* Unity */,
 				470F6366211EB1FA00E6AEDF /* AppDelegate.swift */,
 				470F6368211EB1FA00E6AEDF /* ViewController.swift */,
+				473C250621214C2B00DDAE25 /* MyFeedTableViewController.swift */,
+				473C25102121998B00DDAE25 /* SampleCell.swift */,
 				470F636A211EB1FA00E6AEDF /* Main.storyboard */,
 				470F636D211EB1FC00E6AEDF /* Assets.xcassets */,
 				470F636F211EB1FC00E6AEDF /* LaunchScreen.storyboard */,
@@ -130,6 +151,16 @@
 				470F6388211EB1FC00E6AEDF /* Info.plist */,
 			);
 			path = KANOUITests;
+			sourceTree = "<group>";
+		};
+		473C24F3211EE70400DDAE25 /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				473C24F8211EE7AC00DDAE25 /* AYIConstants.swift */,
+				473C24FC211EE7D100DDAE25 /* AYICache.swift */,
+				473C2500211EE7EF00DDAE25 /* AYIUtility.swift */,
+			);
+			path = Unity;
 			sourceTree = "<group>";
 		};
 		8AB40A4060BF581C8DCAED4C /* Pods */ = {
@@ -304,14 +335,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KANO/Pods-KANO-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FormatterKit/FormatterKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
-				"${BUILT_PRODUCTS_DIR}/ParseFacebookUtilsV4/ParseFacebookUtilsV4.framework",
-				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
+				"${BUILT_PRODUCTS_DIR}/LoadMoreTableViewController/LoadMoreTableViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -320,14 +346,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FormatterKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseFacebookUtilsV4.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoadMoreTableViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -345,7 +366,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473C2501211EE7EF00DDAE25 /* AYIUtility.swift in Sources */,
+				473C250721214C2B00DDAE25 /* MyFeedTableViewController.swift in Sources */,
+				473C24FD211EE7D100DDAE25 /* AYICache.swift in Sources */,
 				470F6369211EB1FA00E6AEDF /* ViewController.swift in Sources */,
+				473C25112121998B00DDAE25 /* SampleCell.swift in Sources */,
+				473C24F9211EE7AC00DDAE25 /* AYIConstants.swift in Sources */,
 				470F6367211EB1FA00E6AEDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +381,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				470F637C211EB1FC00E6AEDF /* KANOTests.swift in Sources */,
+				473C24FE211EE7D100DDAE25 /* AYICache.swift in Sources */,
+				473C25122121998B00DDAE25 /* SampleCell.swift in Sources */,
+				473C2502211EE7EF00DDAE25 /* AYIUtility.swift in Sources */,
+				473C24FA211EE7AC00DDAE25 /* AYIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +393,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				470F6387211EB1FC00E6AEDF /* KANOUITests.swift in Sources */,
+				473C24FF211EE7D100DDAE25 /* AYICache.swift in Sources */,
+				473C25132121998B00DDAE25 /* SampleCell.swift in Sources */,
+				473C2503211EE7EF00DDAE25 /* AYIUtility.swift in Sources */,
+				473C24FB211EE7AC00DDAE25 /* AYIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +557,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K46M3X9G;
 				INFOPLIST_FILE = KANO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -539,7 +577,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K46M3X9G;
 				INFOPLIST_FILE = KANO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -555,7 +597,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K46M3X9G;
 				INFOPLIST_FILE = KANOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -572,7 +618,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K46M3X9G;
 				INFOPLIST_FILE = KANOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,7 +638,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K46M3X9G;
 				INFOPLIST_FILE = KANOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -604,7 +658,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K46M3X9G;
 				INFOPLIST_FILE = KANOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANOUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
