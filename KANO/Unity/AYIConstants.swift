@@ -13,13 +13,17 @@ import RealmSwift
 let kAYIMovieV3Key = "8e08f125c9980610217afbf7de9d6a23"
 let kAYIMovieV4Key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZTA4ZjEyNWM5OTgwNjEwMjE3YWZiZjdkZTlkNmEyMyIsInN1YiI6IjViNmU1ZGM4OTI1MTQxNDA0ZjEyYWI4NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.e0sTxHmLpbZBbYf3zsEIjusrd56GIxY8YadBgzkQB_4"
 let kAYIMovieV3Url = "https://api.themoviedb.org/3/"
+let kAYIMovieImageUrl = "https://image.tmdb.org/t/p/w500"
 
+// for Movie Detail
+let kAYIMovieDetailContentCount             = 9
 
 // MARK: - Videos Object
+
 class Movie: Object {
     @objc dynamic var id                    = 0
     @objc dynamic var video                 = 0
-    @objc dynamic var vote_average          = 0
+    @objc dynamic var vote_average          = 0.0
     @objc dynamic var title                 = ""
     @objc dynamic var popularity            = 0.0
     @objc dynamic var poster_path           = ""
@@ -31,21 +35,28 @@ class Movie: Object {
     @objc dynamic var release_date          = ""
     @objc dynamic var imdb_id               = ""
     @objc dynamic var budget                = 0
-    @objc dynamic var genres                = ""
+    
     @objc dynamic var homepage              = ""
     @objc dynamic var status                = ""
     @objc dynamic var tagline               = ""
     @objc dynamic var vote_count            = 0
     @objc dynamic var revenue               = 0
     @objc dynamic var runtime               = 0
-//    @objc dynamic var genre_ids             = genreIds
-//    @objc dynamic var belongs_to_collection = belongsToCollection
-//    @objc dynamic var production_companies  = ""
-//    @objc dynamic var production_countries  = ""
-//    @objc dynamic var spoken_languages      = ""
+    let               spoken_languages      = List<SpokenLanguage>()
+    let               genres                = List<Genre>()
 }
 
+// MARK: - Videos Sub Objects
 
+class Genre: Object {
+    @objc dynamic var id = 0
+    @objc dynamic var name = ""
+}
+
+class SpokenLanguage: Object {
+    @objc dynamic var iso_639_1 = ""
+    @objc dynamic var name = ""
+}
 
 // MARK: - Videos Class
 // Class key

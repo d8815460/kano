@@ -11,11 +11,11 @@ import UIKit
 class SampleCell: UITableViewCell {
 
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var backdrop: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var overview: UILabel!
-    @IBOutlet weak var voteAverage: UILabel!
-    @IBOutlet weak var voteCount: UILabel!
+    @IBOutlet weak var popularity: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

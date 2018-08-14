@@ -8,12 +8,7 @@
 
 import UIKit
 import LoadMoreTableViewController
-
-func delay(_ delay: TimeInterval, block: @escaping () -> ()) {
-    DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-        block()
-    }
-}
+import SDWebImage
 
 class MyFeedTableViewController: LoadMoreTableViewController {
     
@@ -21,9 +16,9 @@ class MyFeedTableViewController: LoadMoreTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Clear", style: .plain, target: self, action: #selector(clear))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Refresh", style: .plain, target: self, action: #selector(refresh))
+        navigationItem.title = NSLocalizedString("CINEMA", comment: "")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .plain, target: self, action: #selector(clear))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Refresh", comment: ""), style: .plain, target: self, action: #selector(refresh))
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         refreshControl = UIRefreshControl()
@@ -40,10 +35,8 @@ class MyFeedTableViewController: LoadMoreTableViewController {
                         self?.refreshControl?.endRefreshing()
                     }
                 }
-                delay(refreshing ? 0 : 0) {
-                    self?.page += 1
-                    completion(objects!, true)
-                }
+                self?.page += 1
+                completion(objects!, true)
             })
         }
         configureCell = { [weak self] cell, row in
@@ -52,12 +45,27 @@ class MyFeedTableViewController: LoadMoreTableViewController {
             aCell.title.text = (self?.sourceObjects[row] as! Movie).title
             aCell.time.text = (self?.sourceObjects[row] as! Movie).release_date
             aCell.overview.text = (self?.sourceObjects[row] as! Movie).overview
-            aCell.voteAverage.text = String((self?.sourceObjects[row] as! Movie).vote_count)
-            aCell.voteCount.text = "\(String((self?.sourceObjects[row] as! Movie).vote_average)) Reviews"
+            aCell.popularity.text = "\(String((self?.sourceObjects[row] as! Movie).popularity))"
+            if !((self?.sourceObjects[row] as! Movie).poster_path.isEmpty) {
+                aCell.imgView.layer.cornerRadius = 8.0
+                let imageUrl = URL(string: "\(kAYIMovieImageUrl)\((self?.sourceObjects[row] as! Movie).poster_path)")
+                aCell.imgView?.sd_setShowActivityIndicatorView(true)
+                aCell.imgView?.sd_setIndicatorStyle(.whiteLarge)
+                aCell.imgView?.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: ""), options: .cacheMemoryOnly, progress: nil, completed: nil)
+            } else {
+                aCell.imgView.image = UIImage(named: "imageNotAvailable")
+            }
+            if (self?.sourceObjects[row] as! Movie).backdrop_path != "" {
+                let imageUrl = URL(string: "\(kAYIMovieImageUrl)\((self?.sourceObjects[row] as! Movie).backdrop_path)")
+                aCell.backdrop?.sd_setShowActivityIndicatorView(true)
+                aCell.backdrop?.sd_setIndicatorStyle(.white)
+                aCell.backdrop?.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: ""), options: .cacheMemoryOnly, progress: nil, completed: nil)
+            }
             return aCell
         }
         didSelectRow = { [weak self] row in
-            print("did select \(String(describing: self?.sourceObjects[row]))")
+            let movie = self?.sourceObjects[row]
+            self?.performSegue(withIdentifier: "detail", sender: movie)
         }
     }
 
@@ -67,23 +75,23 @@ class MyFeedTableViewController: LoadMoreTableViewController {
     }
 
     @objc func clear() {
-        page = 0
+        page = 1
         refreshData(immediately: true)
     }
     
     @objc func refresh() {
-        page = 0
+        page = 1
         refreshData(immediately: false)
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let view:MyDetailTableViewController = segue.destination as! MyDetailTableViewController
+        view.movie = sender as? Movie
     }
-    */
-
 }

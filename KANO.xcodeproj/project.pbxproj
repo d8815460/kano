@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		470F6367211EB1FA00E6AEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F6366211EB1FA00E6AEDF /* AppDelegate.swift */; };
-		470F6369211EB1FA00E6AEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F6368211EB1FA00E6AEDF /* ViewController.swift */; };
 		470F636C211EB1FA00E6AEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470F636A211EB1FA00E6AEDF /* Main.storyboard */; };
 		470F636E211EB1FC00E6AEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470F636D211EB1FC00E6AEDF /* Assets.xcassets */; };
 		470F6371211EB1FC00E6AEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470F636F211EB1FC00E6AEDF /* LaunchScreen.storyboard */; };
@@ -27,6 +26,15 @@
 		473C25112121998B00DDAE25 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C25102121998B00DDAE25 /* SampleCell.swift */; };
 		473C25122121998B00DDAE25 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C25102121998B00DDAE25 /* SampleCell.swift */; };
 		473C25132121998B00DDAE25 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C25102121998B00DDAE25 /* SampleCell.swift */; };
+		47E3662F2122A2320030ACF7 /* MyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3662E2122A2320030ACF7 /* MyDetailTableViewController.swift */; };
+		47E366302122A2320030ACF7 /* MyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3662E2122A2320030ACF7 /* MyDetailTableViewController.swift */; };
+		47E366312122A2320030ACF7 /* MyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3662E2122A2320030ACF7 /* MyDetailTableViewController.swift */; };
+		47E3663E2122D6390030ACF7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3663D2122D6390030ACF7 /* WebViewController.swift */; };
+		47E3663F2122D6390030ACF7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3663D2122D6390030ACF7 /* WebViewController.swift */; };
+		47E366402122D6390030ACF7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3663D2122D6390030ACF7 /* WebViewController.swift */; };
+		47E366422122D8990030ACF7 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E366412122D8990030ACF7 /* DetailCell.swift */; };
+		47E366432122D8990030ACF7 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E366412122D8990030ACF7 /* DetailCell.swift */; };
+		47E366442122D8990030ACF7 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E366412122D8990030ACF7 /* DetailCell.swift */; };
 		B9BB55C3E6754E0829802513 /* Pods_KANO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EE530CA2B8817ED142C426 /* Pods_KANO.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +59,6 @@
 		04CDE6FB394F8AD2307F6160 /* Pods-KANO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KANO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KANO/Pods-KANO.debug.xcconfig"; sourceTree = "<group>"; };
 		470F6363211EB1FA00E6AEDF /* KANO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KANO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		470F6366211EB1FA00E6AEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		470F6368211EB1FA00E6AEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		470F636B211EB1FA00E6AEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		470F636D211EB1FC00E6AEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		470F6370211EB1FC00E6AEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +74,9 @@
 		473C2500211EE7EF00DDAE25 /* AYIUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYIUtility.swift; sourceTree = "<group>"; };
 		473C250621214C2B00DDAE25 /* MyFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedTableViewController.swift; sourceTree = "<group>"; };
 		473C25102121998B00DDAE25 /* SampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
+		47E3662E2122A2320030ACF7 /* MyDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDetailTableViewController.swift; sourceTree = "<group>"; };
+		47E3663D2122D6390030ACF7 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		47E366412122D8990030ACF7 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		603E73A5256930A52EE07292 /* Pods-KANO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KANO.release.xcconfig"; path = "Pods/Target Support Files/Pods-KANO/Pods-KANO.release.xcconfig"; sourceTree = "<group>"; };
 		C4EE530CA2B8817ED142C426 /* Pods_KANO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KANO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,10 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				473C24F3211EE70400DDAE25 /* Unity */,
+				47E366332122C9BC0030ACF7 /* Views */,
+				47E366322122C9AD0030ACF7 /* ViewController */,
 				470F6366211EB1FA00E6AEDF /* AppDelegate.swift */,
-				470F6368211EB1FA00E6AEDF /* ViewController.swift */,
-				473C250621214C2B00DDAE25 /* MyFeedTableViewController.swift */,
-				473C25102121998B00DDAE25 /* SampleCell.swift */,
 				470F636A211EB1FA00E6AEDF /* Main.storyboard */,
 				470F636D211EB1FC00E6AEDF /* Assets.xcassets */,
 				470F636F211EB1FC00E6AEDF /* LaunchScreen.storyboard */,
@@ -161,6 +170,25 @@
 				473C2500211EE7EF00DDAE25 /* AYIUtility.swift */,
 			);
 			path = Unity;
+			sourceTree = "<group>";
+		};
+		47E366322122C9AD0030ACF7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				473C250621214C2B00DDAE25 /* MyFeedTableViewController.swift */,
+				47E3662E2122A2320030ACF7 /* MyDetailTableViewController.swift */,
+				47E3663D2122D6390030ACF7 /* WebViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		47E366332122C9BC0030ACF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				473C25102121998B00DDAE25 /* SampleCell.swift */,
+				47E366412122D8990030ACF7 /* DetailCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8AB40A4060BF581C8DCAED4C /* Pods */ = {
@@ -368,11 +396,13 @@
 			files = (
 				473C2501211EE7EF00DDAE25 /* AYIUtility.swift in Sources */,
 				473C250721214C2B00DDAE25 /* MyFeedTableViewController.swift in Sources */,
+				47E366422122D8990030ACF7 /* DetailCell.swift in Sources */,
 				473C24FD211EE7D100DDAE25 /* AYICache.swift in Sources */,
-				470F6369211EB1FA00E6AEDF /* ViewController.swift in Sources */,
+				47E3662F2122A2320030ACF7 /* MyDetailTableViewController.swift in Sources */,
 				473C25112121998B00DDAE25 /* SampleCell.swift in Sources */,
 				473C24F9211EE7AC00DDAE25 /* AYIConstants.swift in Sources */,
 				470F6367211EB1FA00E6AEDF /* AppDelegate.swift in Sources */,
+				47E3663E2122D6390030ACF7 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,10 +410,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E366302122A2320030ACF7 /* MyDetailTableViewController.swift in Sources */,
 				470F637C211EB1FC00E6AEDF /* KANOTests.swift in Sources */,
 				473C24FE211EE7D100DDAE25 /* AYICache.swift in Sources */,
 				473C25122121998B00DDAE25 /* SampleCell.swift in Sources */,
+				47E3663F2122D6390030ACF7 /* WebViewController.swift in Sources */,
 				473C2502211EE7EF00DDAE25 /* AYIUtility.swift in Sources */,
+				47E366432122D8990030ACF7 /* DetailCell.swift in Sources */,
 				473C24FA211EE7AC00DDAE25 /* AYIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +425,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E366312122A2320030ACF7 /* MyDetailTableViewController.swift in Sources */,
 				470F6387211EB1FC00E6AEDF /* KANOUITests.swift in Sources */,
 				473C24FF211EE7D100DDAE25 /* AYICache.swift in Sources */,
 				473C25132121998B00DDAE25 /* SampleCell.swift in Sources */,
+				47E366402122D6390030ACF7 /* WebViewController.swift in Sources */,
 				473C2503211EE7EF00DDAE25 /* AYIUtility.swift in Sources */,
+				47E366442122D8990030ACF7 /* DetailCell.swift in Sources */,
 				473C24FB211EE7AC00DDAE25 /* AYIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANO;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KINO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,7 +618,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KANO;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.themovie.KINO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
