@@ -31,6 +31,18 @@ class KANOUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCUIDevice.shared.orientation = .faceUp
+        XCUIDevice.shared.orientation = .portrait
+        
+        let app = XCUIApplication()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Patient Zero"]/*[[".cells.staticTexts[\"Patient Zero\"]",".staticTexts[\"Patient Zero\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Book The Movie"].tap()
+        app.navigationBars["KANO.WebView"].buttons["Patient Zero"].tap()
+        app.navigationBars["Patient Zero"].buttons["CINEMA"].tap()
+        
+        let cinemaNavigationBar = app.navigationBars["CINEMA"]
+        cinemaNavigationBar.buttons["Refresh"].tap()
+        cinemaNavigationBar.buttons["Clear"].tap()
+        
     }
-    
 }
