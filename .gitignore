@@ -61,15 +61,6 @@ fastlane/screenshots
 
 iOSInjectionProject/
 
-FETECS.xcodeproj/project.pbxproj.orig
-FETECS.xcodeproj/project_BACKUP_85646.pbxproj
-FETECS.xcodeproj/project_BASE_85646.pbxproj
-FETECS.xcodeproj/project_LOCAL_85646.pbxproj
-FETECS.xcodeproj/project_REMOTE_85646.pbxproj
-FETECS.xcodeproj/project_BACKUP_39687.pbxproj
-FETECS.xcodeproj/project_BASE_39687.pbxproj
-FETECS.xcodeproj/project_LOCAL_39687.pbxproj
-FETECS.xcodeproj/project_REMOTE_39687.pbxproj
 ObjcUML
 *.dot
 *.pdf
