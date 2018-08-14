@@ -1,0 +1,6 @@
+framework module Pods_KANOUITests {
+  umbrella header "Pods-KANOUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

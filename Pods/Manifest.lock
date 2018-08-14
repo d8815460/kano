@@ -1,36 +1,5 @@
 PODS:
   - Alamofire (4.7.3)
-  - Canvas (0.1.2)
-  - FormatterKit (1.8.2):
-    - FormatterKit/AddressFormatter (= 1.8.2)
-    - FormatterKit/ArrayFormatter (= 1.8.2)
-    - FormatterKit/ColorFormatter (= 1.8.2)
-    - FormatterKit/LocationFormatter (= 1.8.2)
-    - FormatterKit/NameFormatter (= 1.8.2)
-    - FormatterKit/OrdinalNumberFormatter (= 1.8.2)
-    - FormatterKit/Resources (= 1.8.2)
-    - FormatterKit/TimeIntervalFormatter (= 1.8.2)
-    - FormatterKit/UnitOfInformationFormatter (= 1.8.2)
-    - FormatterKit/URLRequestFormatter (= 1.8.2)
-  - FormatterKit/AddressFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/ArrayFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/ColorFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/LocationFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/NameFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/OrdinalNumberFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/Resources (1.8.2)
-  - FormatterKit/TimeIntervalFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/UnitOfInformationFormatter (1.8.2):
-    - FormatterKit/Resources
-  - FormatterKit/URLRequestFormatter (1.8.2):
-    - FormatterKit/Resources
   - LoadMoreTableViewController (1.3.2)
   - Realm (3.7.5):
     - Realm/Headers (= 3.7.5)
@@ -40,38 +9,28 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
-  - Synchronized (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
-  - Canvas
-  - FormatterKit (~> 1.8)
   - LoadMoreTableViewController
   - RealmSwift
   - SDWebImage (~> 4.0)
-  - Synchronized (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Canvas
-    - FormatterKit
     - LoadMoreTableViewController
     - Realm
     - RealmSwift
     - SDWebImage
-    - Synchronized
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
-  FormatterKit: 4b8f29acc9b872d5d12a63efb560661e8f2e1b98
   LoadMoreTableViewController: 3378dc43d56f6e861a1a5a932334f446ee0aaa63
   Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
   RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  Synchronized: bac5463b70c2f5fde23fe4ae588739bf9be095a4
 
-PODFILE CHECKSUM: 2f60b8c871f77110ab5b0769a447a7ddae104342
+PODFILE CHECKSUM: 8aafd820fd247a98b630a9aafdf1682980bd2147
 
 COCOAPODS: 1.5.0

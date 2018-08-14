@@ -126,7 +126,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9L-aI-gPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="820.83958020989508"/>
+            <point key="canvasLocation" x="629" y="821"/>
         </scene>
         <!--My Detail Table View Controller-->
         <scene sceneID="JZG-U7-5YA">
@@ -226,7 +226,7 @@
                     <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="1880.8" y="820.83958020989508"/>
+            <point key="canvasLocation" x="1168" y="821"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="CKL-Dk-zOm">
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vca-vr-4Fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669.5999999999999" y="820.83958020989508"/>
+            <point key="canvasLocation" x="1694" y="821"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hnb-Kv-SyV">

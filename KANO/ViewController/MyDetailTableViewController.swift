@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MyDetailTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

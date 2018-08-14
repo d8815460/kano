@@ -12,33 +12,26 @@ import SDWebImage
 
 class MyFeedTableViewController: LoadMoreTableViewController {
     
-    private var page = 1
+    public var initialPage = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = NSLocalizedString("CINEMA", comment: "")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .plain, target: self, action: #selector(clear))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Refresh", comment: ""), style: .plain, target: self, action: #selector(refresh))
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
-        refreshControl = UIRefreshControl()
-        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        self.setupUI()
         
         fetchSourceObjects = { [weak self] completion in
             var objects:[Movie]?
-            AYIUtility.queryMovies(date: Date(), page: (self?.page)!, block: { (movies, error) in
+            AYIUtility.queryMovies(date: Date(), page: (self?.initialPage)!, block: { (movies, error) in
                 objects = movies
                 var refreshing:Bool = false
                 DispatchQueue.main.async {
                     refreshing = self?.refreshControl?.isRefreshing == true
-                    if refreshing {
-                        self?.refreshControl?.endRefreshing()
-                    }
+                    if refreshing { self?.refreshControl?.endRefreshing() }
                 }
-                self?.page += 1
+                self?.initialPage += 1
                 completion(objects!, true)
             })
         }
+        
         configureCell = { [weak self] cell, row in
             
             let aCell: SampleCell = self?.tableView.dequeueReusableCell(withIdentifier: "SampleCell") as! SampleCell
@@ -52,9 +45,8 @@ class MyFeedTableViewController: LoadMoreTableViewController {
                 aCell.imgView?.sd_setShowActivityIndicatorView(true)
                 aCell.imgView?.sd_setIndicatorStyle(.whiteLarge)
                 aCell.imgView?.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: ""), options: .cacheMemoryOnly, progress: nil, completed: nil)
-            } else {
-                aCell.imgView.image = UIImage(named: "imageNotAvailable")
-            }
+            } else { aCell.imgView.image = UIImage(named: "imageNotAvailable") }
+            
             if (self?.sourceObjects[row] as! Movie).backdrop_path != "" {
                 let imageUrl = URL(string: "\(kAYIMovieImageUrl)\((self?.sourceObjects[row] as! Movie).backdrop_path)")
                 aCell.backdrop?.sd_setShowActivityIndicatorView(true)
@@ -63,10 +55,21 @@ class MyFeedTableViewController: LoadMoreTableViewController {
             }
             return aCell
         }
+        
         didSelectRow = { [weak self] row in
             let movie = self?.sourceObjects[row]
             self?.performSegue(withIdentifier: "detail", sender: movie)
         }
+    }
+    
+    fileprivate func setupUI() {
+        navigationItem.title = NSLocalizedString("CINEMA", comment: "")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .plain, target: self, action: #selector(clear))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Refresh", comment: ""), style: .plain, target: self, action: #selector(refresh))
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,12 +78,12 @@ class MyFeedTableViewController: LoadMoreTableViewController {
     }
 
     @objc func clear() {
-        page = 1
+        initialPage = 1
         refreshData(immediately: true)
     }
     
     @objc func refresh() {
-        page = 1
+        initialPage = 1
         refreshData(immediately: false)
     }
 
