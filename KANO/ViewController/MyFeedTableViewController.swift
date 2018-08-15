@@ -33,7 +33,6 @@ class MyFeedTableViewController: LoadMoreTableViewController {
         }
         
         configureCell = { [weak self] cell, row in
-            
             let aCell: SampleCell = self?.tableView.dequeueReusableCell(withIdentifier: "SampleCell") as! SampleCell
             aCell.title.text = (self?.sourceObjects[row] as! Movie).title
             aCell.time.text = (self?.sourceObjects[row] as! Movie).release_date

@@ -13,7 +13,7 @@ import RealmSwift
 class AYIUtility {
     // MARK:- AYIUtility
     /*
-     *範例：http://api.themoviedb.org/3/movie/328111?api_key=328c283cd27bd1877d9 080ccb1604c91
+     *範例：http://api.themoviedb.org/3/movie/328111?api_key=328c283cd27bd1877d9080ccb1604c91
      */
     @objc class func queryTheMovie(movieId:String, block completionBlock: ((_ object: Movie, _ error: NSError?) -> Void)?) {
         // local DB 有完整檔案，就不用再call API，減少網路傳輸
@@ -36,7 +36,6 @@ class AYIUtility {
                             }
                             oldMovie?.status = result[kAYIMoviesStatusKey]! as! String
                             oldMovie?.tagline = result[kAYIMoviesTaglineKey]! as! String
-                            if let homepage = result[kAYIMoviesHomepageKey] as? String { oldMovie?.homepage = homepage }
                             oldMovie?.vote_count = result[kAYIMoviesVoteCountKey]! as! Int
                             oldMovie?.vote_average = result[kAYIMoviesVoteAverageKey]! as! Double
                             if (result[kAYIMoviesIMDBIdKey]! as AnyObject).classForCoder! != NSNull().classForCoder {
@@ -49,11 +48,6 @@ class AYIUtility {
                                     genre.id = (element as! NSDictionary).object(forKey: "id")! as! Int
                                     genre.name = (element as! NSDictionary).object(forKey: "name")! as! String
                                     oldMovie?.genres.append(genre)
-                                }
-                            }
-                            if result[kAYIMoviesGenreIdsKey] != nil {
-                                for element in (result[kAYIMoviesGenreIdsKey]! as? NSArray)! {
-                                    print("element = \(element)")
                                 }
                             }
                             if result[kAYIMoviesSpokenLanguagesKey] != nil {
@@ -80,7 +74,7 @@ class AYIUtility {
     }
     
     /*
-     *範例：http://api.themoviedb.org/3/discover/movie?api_key=328c283cd27bd1877 d9080ccb1604c91&primary_release_date.lte=2016-12-31&sort_by=release_ date.desc&page=1
+     *範例：http://api.themoviedb.org/3/discover/movie?api_key=328c283cd27bd1877 d9080ccb1604c91&primary_release_date.lte=2016-12-31&sort_by=release_date.desc&page=1
      */
     @objc class func queryMovies(date:Date, page:Int, block completionBlock: ((_ objects: [Movie], _ error: NSError?) -> Void)?) {
         let dateFormatter = DateFormatter()
